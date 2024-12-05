@@ -19,18 +19,8 @@ Scenario C: DoS, Probe, and U2R attacks
 
 # Instructions
   1. Run the dataExtractor.py script to create testing/training sub-datasets of the attacks based on your preference.
-  2. Create a directory named "Scenarios" at the same level of python scripts.
-  3. Create subdirectories in "Scenarios", these should start with the letter "S" and will have the testing and training sub-datasets in them. For example scenario A will have a directory "SA" and the files "Testing-a2-a4.csv  Training-a1-a3.csv" inside that directory. The format should should as follows. If there is no "Scenarios" directory, or the subdirectories do not start with "S", or there are not two files distinctly labelled with "Testing" and "Training" then the program will error out.
-     root
-       Scenarios
-         SA
-           Testing-a2-a4.csv
-           Training-a1-a3.csv
-         SB
-           ...
-           ...
-         SC
-
+  2. Create a directory named "Scenarios" at the same level of the python scripts.
+  3. Create subdirectories in "Scenarios", these should start with the letter "S" and will have the testing and training sub-datasets in them. For example scenario A will have a subdirectory "SA" and the files "Testing-a2-a4.csv  Training-a1-a3.csv" inside that directory. If there is no "Scenarios" directory, or the subdirectories do not start with "S", or there are not two files distinctly labelled with "Testing" and "Training" then the program will error out.
   4. Run the trainEvaluate.py script. This will train and evaluate based on the scenarios and generate the result.
 
 # Dependencies
