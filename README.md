@@ -1,7 +1,6 @@
 # Network Anomaly Detection
 A project to detect network anomalies using machine learning techniques, specifically Feed-Forward Neural Networks (FNN). This project employs the NSL-KDD dataset to identify abnormal patterns in network traffic, indicating potential threats such as intrusions or malware. The project focuses on data preprocessing, training customized models, and evaluating their performance under various attack scenarios. It was developed as part of an advanced cybersecurity coursework project.
 
-The AnomalyDetection.ipynb notebook contains implementations for creating and testing FNN models, performing exploratory data analysis (EDA), and customizing datasets for anomaly detection scenarios. Results include accuracy metrics, prediction analysis, and observations of attack classification performance.
 
 # Dataset
 The NSL-KDD dataset was used for training and testing. It is widely utilized for evaluating intrusion detection systems and contains labeled network traffic data for both normal and attack scenarios.
