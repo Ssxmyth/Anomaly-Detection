@@ -1,17 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 23 23:02:38 2019
-
-@author: Sowmya
-Modified by Dijiang Huang 4/19/2020
-"""
 import numpy as np
 import pandas as pd
 
-# Define variables
-# Data file Path
 DatasetPath='NSL-KDD/'
-# Data file name
 input_train = "KDDTrain+.txt"
 input_test = "KDDTest+.txt"
 file_extension = '.csv'  # .csv or .txt
@@ -24,9 +14,7 @@ attacks_subClass = [['apache2', 'back', 'land', 'neptune', 'mailbomb', 'pod', 'p
      ['ftp_write', 'guess_passwd', 'httptunnel', 'imap', 'multihop', 'named', 'phf', 'sendmail', 'snmpgetattack', 'spy', 'snmpguess', 'warezclient', 'warezmaster', 'xlock', 'xsnoop']
      ]
 
-# Set1 is selected attack classes
 training_attack_class_list = []
-# Set2 is removed attack classes
 testing_attack_class_list = []
 attack_class_1 = list(map(int, input("(Training Dataset) Please enter the attack class(es) that you want from the below list:\n(Note that you can choose one or multiple classes, e.g., 1 3,  and input 0 means nothing is chosen) \na1 -> DoS (Enter 1 for this selection)\na2 -> Probe (Enter 2 for this selection)\na3 -> U2R (Enter 3 for this selection)\na4 -> R2L (Enter 4 for this selection)\n\n").split()))
 attack_class_2 = list(map(int, input("(Testing Dataset) Please enter the attack class(es) that you want from the below list:\n(Note that you can choose one or multiple classes, e.g., 1 3,  and input 0 means nothing is chosen) \na1 -> DoS (Enter 1 for this selection)\na2 -> Probe (Enter 2 for this selection)\na3 -> U2R (Enter 3 for this selection)\na4 -> R2L (Enter 4 for this selection)\n\n").split()))
